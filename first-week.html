@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ezra Simbulan Home Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <div id="content">
         <header>
-            <a href="index.html">
-                <img class="logo" src="images/student-starter-guide-logo.png" alt="Student Starter Guide Home">
-            </a>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="first-week.html">First Week</a>
-                <a href="first-semester.html">First Semester</a>
-            </nav>
+            <div class="header">
+                <a href="index.html">
+                    <img class="logo" src="images/student-starter-guide-logo.png" alt="Student Starter Guide home">
+                </a>
+                <nav class="nav" aria-label="Main Navigation">
+                    <ul>
+                        <li><a href="index.html" aria-current="page">Home</a></li>
+                        <li><a href="first-week.html">First Week</a></li>
+                        <li><a href="first_semester/first-semester.html">First Semester</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <footer>
-            <p>Student Starter Guide | Ezra Simbulan</p>
-            <a href="index.html">Home |</a>
-            <a href="first-week.html"> First Week |</a>
-            <a href="first-semester.html"> First Semester</a>
+            <div class="site-footer">
+            <p>Student Starter Guide | Ezra Simbulan | <a href="index.html">Home</a> | <a href="first-week.html"> First Week </a> | <a href="first_semester/first-semester.html"> First Semester</a></p>
+            </div>
         </footer>
     </div>
 </body>

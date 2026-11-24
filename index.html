@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ezra Simbulan Home Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <div id="content">
         <header>
-            <a href="index.html">
-                <img class="logo" src="images/student-starter-guide-logo.png" alt="Student Starter Guide Home">
-            </a>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="first-week.html">First Week</a>
-                <a href="first-semester.html">First Semester</a>
-            </nav>
+            <div class="header">
+                <a href="index.html">
+                    <img class="logo" src="images/student-starter-guide-logo.png" alt="Student Starter Guide home">
+                </a>
+                <nav class="nav" aria-label="Main navigation">
+                    <ul>
+                        <li><a href="index.html" aria-current="page">Home</a></li>
+                        <li><a href="first-week.html">First Week</a></li>
+                        <li><a href="first_semester/first-semester.html">First Semester</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <main id="home">
             <div class="main-header">
@@ -26,7 +30,7 @@
             <img class="campus-arrival" src="images/campus-arrival.png" alt="Students carrying backpacks toward college buildings">
             <section id="list">
                 <h2>Before Classes Begin</h2>
-                <h3>You do not need to figure out the whole semester today. Start with these basics: </h3>
+                <p>You do not need to figure out the whole semester today. Start with these basics: </p>
                  <ul class="before-classes-checklist">
                     <li>Find your schedule. Save class times, building names, and room numbers where you can reach them quickly. </li>
                     <li>Walk your route. Locate your classrooms before the first day and allow time between buildings. </li>
@@ -47,19 +51,18 @@
                 <section id="first-semester">
                     <h3>First Semester</h3>
                     <p>Build study habits, track spending, find support, and make room for friendships.</p>
-                    <a href="first-semester.html">Build my semester routine</a>
+                    <a href="first_semester/first-semester.html">Build my semester routine</a>
                 </section>
             </section>
-            <div class="main-footer">
+            <section class="main-footer">
                 <h2>A realistic goal</h2>
                 <p>Being prepared means knowing your next step and where to look for help. Choose one item from the checklist and start there. </p>
-            </div>
+            </section>
         </main>
         <footer>
-            <p>Student Starter Guide | Ezra Simbulan</p>
-            <a href="index.html">Home |</a>
-            <a href="first-week.html"> First Week |</a>
-            <a href="first-semester.html"> First Semester</a>
+            <div class="site-footer">
+            <p>Student Starter Guide | Ezra Simbulan | <a href="index.html">Home</a> | <a href="first-week.html"> First Week </a> | <a href="first_semester/first-semester.html"> First Semester</a></p>
+            </div>
         </footer>
     </div>
 </body>
